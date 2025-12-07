@@ -8,6 +8,8 @@ import Partners from './Partners'
 import Nbcs from './Nbcs'
 import Journey from './Journey'
 import Emi from './Emi'
+import Form from './Form'
+import About from './About'
 
 const Container = () => {
   return (
@@ -21,6 +23,8 @@ const Container = () => {
       <Nbcs/>
       <Journey/>
       <Emi/>
+      <Form/>
+      <About/>
     </div>
   )
 }

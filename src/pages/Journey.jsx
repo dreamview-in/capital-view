@@ -26,7 +26,7 @@ const Journey = () => {
                 {
                     data.map((item, index) => {
                         return (
-                             <div className='flex-col flex items-center justify-center md:min-h-[20vw] rounded-xl bg-[#6BD1D3] w-full p-8 gap-5'>
+                             <div className='flex-col flex items-center justify-center md:min-h-[20vw]  rounded-xl bg-[#6BD1D3] w-full p-8 gap-5'>
                     <div className='w-[12vw] h-[12vw] md:w-[5vw] md:h-[5vw] rounded-full bg-white'></div>
                      <h1 className='text-2xl font-[spaceRegualar] font-bold mt-4'>{item.title}</h1>
                      <p className='text-center mt-2 text-[#21272A] text-xl font-[spaceRegualar]'>{item.desc} </p>
