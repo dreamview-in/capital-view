@@ -1,0 +1,24 @@
+@font-face {
+  font-family: semibold;
+  src: url(./fonts/semibold.ttf);
+}
+@font-face {
+  font-family: spaceBold;
+  src: url(./fonts/spaceBold.ttf);
+}
+@font-face {
+  font-family: regular-inter;
+  src: url(./fonts/regular.ttf);
+}
+@font-face {
+  font-family: bold-inter;
+  src: url(./fonts/bold.ttf);
+}
+@font-face {
+  font-family: spaceRegualar ;
+  src: url(./fonts/spaceRegular.ttf);
+}
+
+span{
+  color: #6BD1D3;
+}
