@@ -4,17 +4,20 @@ const About = () => {
   const data = [
     {
       img: "/icon1.jpg",
-      title: "1800+ Active Clients",
+      title: "Mrs. Gautami Bisht",
+      sub:"Senior Paradigm Strategist",
       desc: "Dude, your stuff is the bomb! House rent is the real deal! I STRONGLY recommend house rent to EVERYONE interested in running a successful online business!",
     },
     {
       img: "/icon2.jpg",
-      title: "10000+",
+      title: "Mrs. Lavanya Singh",
+      sub:"Legacy Usability Manager",
       desc: "'I like Infinity Estate more and more each day because it makes my life a lot easier. We can't understand how we've been living without Infinity Estate. Infinity Estate has got everything I need. The service was excellent.',",
     },
     {
       img: "/icon3.png",
-      title: "50+",
+      title: "Siddeshwar Singh",
+      sub:"District Assurance Officer",
       desc: "You've saved our business! Infinity Estate has got everything I need. We were treated like royalty. It's really wonderful.",
     },
   ]
@@ -45,8 +48,8 @@ const About = () => {
                     <img className='w-full h-full object-cover' src={item.img} alt="" />
                   </div>
                   <div >
-                    <h1 className='capitalize text-xl font-[spaceBold]'>aditya mate</h1>
-                    <h1 className='capitalize text-sm font-[spaceRegualar]'>Lorem ipsum dolor sit amet.</h1>
+                    <h1 className='capitalize text-xl font-[spaceBold]'>{item.title}</h1>
+                    <h1 className='capitalize text-sm text-gray-500 font-[spaceRegualar]'>{item.sub}</h1>
                   </div>
                 </div>
               </div>

@@ -10,10 +10,14 @@ import Journey from './Journey'
 import Emi from './Emi'
 import Form from './Form'
 import About from './About'
+import ContactForm from './ContactForm'
+import Footer from './Footer'
+import Navbar from '../components/Navbar'
 
 const Container = () => {
   return (
     <div>
+      <Navbar/>
       <Home/>
       <Features/>
       <Contact/>
@@ -25,6 +29,8 @@ const Container = () => {
       <Emi/>
       <Form/>
       <About/>
+      <ContactForm/>
+      <Footer/>
     </div>
   )
 }
