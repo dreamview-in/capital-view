@@ -45,8 +45,8 @@ const Journey = () => {
                 {
                     data.map((item, index) => {
                         return (
-                            <div className='flex-col flex items-center justify-center md:min-h-[20vw]  rounded-xl bg-[#6BD1D3] w-full p-8 gap-5'>
-                                <div className='w-[12vw] h-[12vw] md:w-[5vw] md:h-[5vw] rounded-full flex items-center justify-center bg-white'>
+                            <div key={index} className='flex-col flex items-center justify-center md:min-h-[20vw]  rounded-xl bg-[#6BD1D3] w-full p-8 gap-5'>
+                                <div className='w-[15vw] h-[15vw] md:w-[5vw] md:h-[5vw] rounded-full flex items-center justify-center bg-white'>
                                     {item.svg}
                                 </div>
                                 <h1 className='text-2xl font-[spaceRegualar] font-bold mt-4'>{item.title}</h1>

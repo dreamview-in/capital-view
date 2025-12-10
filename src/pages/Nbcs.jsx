@@ -11,7 +11,7 @@ const Nbcs = () => {
             <div className='w-full flex justify-center items-center mt-10 flex-col gap-10 md:gap-20 md:flex-row'>
                 {
                     ["/part1.png", "/part2.png", "/part3.png", "/part4.png","/part5.png"].map((item, index) => (
-                        <img className='w-[50%] md:w-[15%] mt-5' src={item} alt="" />
+                        <img key={index} className='w-[50%] md:w-[15%] mt-5' src={item} alt="" />
                     ))
                 }
             </div>

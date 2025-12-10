@@ -32,7 +32,7 @@ const About = () => {
         {
           data.map((item, index) => {
             return (
-              <div className='flex-col flex items-start justify-between md:min-h-[18vw]  rounded-xl bg-white border w-full p-8 gap-5'>
+              <div key={index} className='flex-col flex items-start justify-between md:min-h-[18vw]  rounded-xl bg-white border w-full p-8 gap-5'>
                 <div>
                   <svg width="123" height="25" viewBox="0 0 123 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.3899 2.5549C11.6512 1.75072 12.7888 1.75072 13.0501 2.5549L14.7676 7.84068C14.8844 8.20032 15.2196 8.44381 15.5977 8.44381H21.1555C22.0011 8.44381 22.3526 9.52582 21.6686 10.0228L17.1722 13.2896C16.8663 13.5119 16.7383 13.9059 16.8551 14.2655L18.5726 19.5513C18.8339 20.3555 17.9135 21.0242 17.2294 20.5272L12.733 17.2604C12.4271 17.0381 12.0129 17.0381 11.7069 17.2604L7.21059 20.5272C6.52652 21.0242 5.60611 20.3555 5.8674 19.5513L7.58485 14.2655C7.70171 13.9059 7.5737 13.5119 7.26777 13.2896L2.77141 10.0228C2.08734 9.52582 2.43891 8.44381 3.28447 8.44381H8.84227C9.22041 8.44381 9.55555 8.20032 9.6724 7.84068L11.3899 2.5549Z" fill="#F5D949" />

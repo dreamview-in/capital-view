@@ -10,35 +10,35 @@ const ContactForm = () => {
 
             <div className='flex p-2 gap-3 items-center '>
               <h4 className='text-2xl'>
-                <i class="ri-phone-line"></i>
+                <i className="ri-phone-line"></i>
               </h4>
               <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>+91 70118 66259</p>
             </div>
             <div className='flex p-2 gap-3 items-center '>
               <h4 className='text-2xl'>
-                <i class="ri-mail-line"></i>
+                <i className="ri-mail-line"></i>
               </h4>
               <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>info@fundraize.com</p>
             </div>
             <div className='flex p-2 gap-3 items-center '>
               <h4 className='text-2xl'>
-                <i class="ri-map-pin-line"></i>
+                <i className="ri-map-pin-line"></i>
               </h4>
               <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>Hastsal village, Uttam Nagar, New Delhi</p>
             </div>
 
             <div className='flex mt-8 gap-5 items-center justify-center'>
                 <h4 className='text-2xl'>
-                <i class="ri-facebook-fill"></i>
+                <i className="ri-facebook-fill"></i>
               </h4>
                 <h4 className='text-2xl'>
-                <i class="ri-instagram-line"></i>
+                <i className="ri-instagram-line"></i>
               </h4>
                 <h4 className='text-2xl'>
-               <i class="ri-linkedin-fill"></i>
+               <i className="ri-linkedin-fill"></i>
               </h4>
                 <h4 className='text-2xl'>
-               <i class="ri-youtube-line"></i>
+               <i className="ri-youtube-line"></i>
               </h4>
             </div>
         </div>
