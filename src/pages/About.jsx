@@ -26,7 +26,7 @@ const About = () => {
       <h1 className='text-[6vw] md:text-[2vw] font-[spaceBold] '>
         Our Journey in <span>Numbers</span>
       </h1>
-      <p className='px-5 md:w-[50%] text-center mt-2 text-gray-500 font-[spaceRegualar]'>CapitalView helps individuals and businesses access trusted loans and government-backed funding with ease. We simplify the process, offering quick tools and expert support to fuel your financial growth.</p>
+      <p className='px-5 md:w-[50%] text-center mt-2 text-gray-500 font-[spaceRegualar]'>CaptialVenue helps individuals and businesses access trusted loans and government-backed funding with ease. We simplify the process, offering quick tools and expert support to fuel your financial growth.</p>
 
       <div className='flex flex-col w-full items-center mt-20 justify-center gap-10 md:flex-row '>
         {

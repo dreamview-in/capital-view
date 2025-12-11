@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="w-full flex items-center justify-between px-8 h-[12vh] bg-[#14263E] fixed z-99">
 
       <div className="font-[spaceBold] text-[#6BD1D3] text-3xl md:text-4xl">
-        CAPITALVIEW
+        CAPITALVENUE
       </div>
 
       <div className="hidden md:flex gap-6 items-center">

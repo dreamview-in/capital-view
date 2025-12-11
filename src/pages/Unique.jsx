@@ -24,7 +24,7 @@ const Unique = () => {
     return (
         <div className='w-full p-6 flex flex-col items-center justify-center bg-white mt-20 mb-20'>
             <h1 className='text-[5vw] md:text-[2vw] font-[spaceRegualar] font-bold '>
-                What Makes <span>CAPITALVIEW</span> Unique
+                What Makes <span>CAPITALVENUE</span> Unique
             </h1>
 
             <div className='w-full mt-15 flex flex-col md:flex-row gap-10 md:gap-20 items-center justify-center px-3 '>
