@@ -24,7 +24,7 @@ const ContactForm = () => {
               <h4 className='text-2xl'>
                 <i className="ri-map-pin-line"></i>
               </h4>
-              <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>Hastsal village, Uttam Nagar, New Delhi</p>
+              <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>    Majlis park, Gali No- 7, Near ram mandir, Delhi, North West 110033</p>
             </div>
 
             <div className='flex mt-8 gap-5 items-center justify-center'>
