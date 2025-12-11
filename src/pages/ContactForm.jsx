@@ -12,13 +12,13 @@ const ContactForm = () => {
               <h4 className='text-2xl'>
                 <i className="ri-phone-line"></i>
               </h4>
-              <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>+91 70118 66259</p>
+              <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>9897096111, 9911500639</p>
             </div>
             <div className='flex p-2 gap-3 items-center '>
               <h4 className='text-2xl'>
                 <i className="ri-mail-line"></i>
               </h4>
-              <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>info@fundraize.com</p>
+              <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>Contact@capitalvenue.in </p>
             </div>
             <div className='flex p-2 gap-3 items-center '>
               <h4 className='text-2xl'>
@@ -39,6 +39,7 @@ const ContactForm = () => {
               </h4>
                 <h4 className='text-2xl'>
                <i className="ri-youtube-line"></i>
+
               </h4>
             </div>
         </div>
@@ -62,7 +63,7 @@ const ContactForm = () => {
                 <h1 className='font-[spaceRegualar]'>Message</h1>
               <textarea rows={4} placeholder='Your Message' className='w-full px-3 py-2  border-gray-300 rounded-md bg-[#0000001a] outline-none'/>
               </div>
-              <button className='bg-[#6BD1D3] p-3 w-full rounded-md font-[spaceBold]'>Get Your Home Theater Setup</button>
+              <button className='bg-[#6BD1D3] p-3 w-full rounded-md font-[spaceBold]'>Submit</button>
           </div>
         </div>
       </div>

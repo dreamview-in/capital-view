@@ -12,10 +12,10 @@ const Footer = () => {
                     <div className='flex flex-col gap-5 p-3 w-full  items-center md:items-start'>
 
                         <div className='flex justify-center md:justify-start items-center w-full gap-4'>
-                            <div className='w-[10vw] h-[10vw] md:w-[3vw] md:h-[3vw] rounded-full overflow-hidden'>
+                            {/* <div className='w-[10vw] h-[10vw] md:w-[3vw] md:h-[3vw] rounded-full overflow-hidden'>
                                 <img className='w-full h-full object-cover' src="/logo.png" alt="logo" />
-                            </div>
-                            <h1 className='font-[spaceBold] text-3xl md:text-2xl'>Fund Raizer</h1>
+                            </div> */}
+                            <h1 className='font-[spaceBold] text-3xl md:text-2xl'>CapitalVenue </h1>
                         </div>
 
                         <p className='font-[spaceRegualar] md:text-left text-center text-gray-500 text-xl'>

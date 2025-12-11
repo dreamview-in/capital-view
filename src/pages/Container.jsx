@@ -17,15 +17,14 @@ import Navbar from '../components/Navbar'
 const Container = () => {
   return (
     <div>
-      <Navbar/>
       <Home/>
       <Features/>
       <Contact/>
       <Unique/>
       <Help/>
       <Partners />
-      <Nbcs/>
-      <Journey/>
+      {/* <Nbcs/> */}
+      {/* <Journey/> */}
       <Emi/>
       <Form/>
       <About/>
