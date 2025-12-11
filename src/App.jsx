@@ -7,13 +7,15 @@ import { Routes,Route } from 'react-router-dom'
 import Help from './pages/Help'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import ContactForm from './pages/ContactForm'
 
 const App = () => {
   return (
-    <div>
+    <div className=' scroll-smooth'>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Container />} />
+        <Route path='/form' element={<ContactForm />} />
         <Route path='/Loan Products' element={<Help />} />
         <Route path='/Contact us' element={<Contact />} />
         <Route path='/About us' element={<About />} />

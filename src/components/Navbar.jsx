@@ -25,9 +25,11 @@ const Navbar = () => {
         ))}
 
       </div>
-      <button className="bg-[#75DCE3] md:block hidden text-[1rem] text-black font-[spaceBold] px-8 py-3 rounded-md hover:bg-[#5ac1c7] transition-all uppercase duration-300">
+      <Link to="/form">
+      <button className="bg-[#75DCE3] cursor-pointer md:block hidden text-[1rem] text-black font-[spaceBold] px-8 py-3 rounded-md hover:bg-[#5ac1c7] transition-all uppercase duration-300">
         Contact Us
       </button>
+       </Link>
 
       <div className="md:hidden text-white cursor-pointer" onClick={() => setOpen(!open)}>
         {open ? <X size={30} /> : <Menu size={30} />}

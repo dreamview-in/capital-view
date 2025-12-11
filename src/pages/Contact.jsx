@@ -1,5 +1,6 @@
 import React from 'react'
 import Btn from '../components/Btn'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
     return (
@@ -32,10 +33,9 @@ const Contact = () => {
                                 Lending partners</h1>
                         </div>
                     </div>
-                    <div className='mt-5'>
-
+                    <Link to='/form' className='mt-5'>
                         <Btn value={"contact us"} font={"spaceRegualar"} />
-                    </div>
+                    </Link>
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Btn from '../components/Btn'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -58,8 +59,9 @@ const Footer = () => {
                     <p className='font-[spaceRegualar] text-center md:text-left text-gray-500 text-xl'>
                         Transparent. Trusted. Impactful. Let’s build a better future.
                     </p>
-
+                    <Link to='/form'>
                     <Btn value={"Get Started"} font={"spaceBold"} />
+                    </Link>
 
                     <div className='flex gap-3 items-center'>
                         <h1 className='font-[spaceRegualar]'>Follow us on</h1>
