@@ -87,7 +87,6 @@ const AboutLoan = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
         <section className=" bg-white px-6 sm:px-12 lg:px-24 py-20">
 
-          {/* Section Header */}
           <div className="max-w-6xl mb-16">
             <h2 className="text-3xl sm:text-4xl font-semibold text-[#1f2a44] mb-4">
               {loan.name} Products
@@ -98,10 +97,8 @@ const AboutLoan = () => {
             </p>
           </div>
 
-          {/* Products Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-14 max-w-6xl">
 
-            {/* Medical Emergency */}
             <div>
               <h3 className="text-xl font-semibold text-[#1f2a44] mb-3">
                 Medical Emergency
@@ -113,7 +110,6 @@ const AboutLoan = () => {
               </p>
             </div>
 
-            {/* Wedding Purpose */}
             <div>
               <h3 className="text-xl font-semibold text-[#1f2a44] mb-3">
                 Wedding Purpose
@@ -125,7 +121,6 @@ const AboutLoan = () => {
               </p>
             </div>
 
-            {/* Abroad Travel */}
             <div>
               <h3 className="text-xl font-semibold text-[#1f2a44] mb-3">
                 Abroad Travel
@@ -137,7 +132,6 @@ const AboutLoan = () => {
               </p>
             </div>
 
-            {/* Child Educations */}
             <div>
               <h3 className="text-xl font-semibold text-[#1f2a44] mb-3">
                 Child Educations

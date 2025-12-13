@@ -23,7 +23,6 @@ const Container = () => {
       <Contact/>
       <Unique/>
       <Help/>
-      {/* <Loan/> */}
       <Partners />
       <Emi/>
       <Form/>

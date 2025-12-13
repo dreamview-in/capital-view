@@ -18,7 +18,6 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Container />} />
-        {/* <Route path='/form' element={<ContactForm />} /> */}
         <Route path='/loan' element={<AboutLoan />} />
         <Route path='/loanForm' element={<Form />} />
         <Route path='/Loan Products' element={
