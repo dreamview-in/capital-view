@@ -9,6 +9,8 @@ import Contact from './pages/Contact'
 import About from './pages/About'
 import ContactForm from './pages/ContactForm'
 import Loan from './pages/Loan'
+import AboutLoan from './pages/AboutLoan'
+import Form from './pages/Form'
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Container />} />
         <Route path='/form' element={<ContactForm />} />
+        <Route path='/loan' element={<AboutLoan />} />
+        <Route path='/loanForm' element={<Form />} />
         <Route path='/Loan Products' element={
           <>
           <Help />
