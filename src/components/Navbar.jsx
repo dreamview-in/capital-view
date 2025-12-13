@@ -78,7 +78,7 @@ const Navbar = () => {
       </div>
       <Link to="/form">
       <button className="bg-[#75DCE3] cursor-pointer md:block hidden text-[1rem] text-black font-[spaceBold] px-8 py-3 rounded-md hover:bg-[#5ac1c7] transition-all uppercase duration-300">
-        Contact Us
+        become referral partner 
       </button>
        </Link>
 
@@ -99,7 +99,7 @@ const Navbar = () => {
           ))}
 
           <button className="bg-[#75DCE3] text-[1rem] text-black font-[spaceBold] px-10 py-3 rounded-md hover:bg-[#5ac1c7] transition-all uppercase duration-300">
-            Contact Us
+            become referral partner 
           </button>
         </div>
       )}
