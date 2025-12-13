@@ -57,11 +57,11 @@ const AboutLoan = () => {
       <div className="w-full md:h-screen flex items-center justify-center flex-col md:mt-0 mt-[12vh]  bg-white px-6 sm:px-12 lg:px-24 py-16">
         <div className="max-w-6xl mx-auto px-6 sm:px-12 lg:px-24">
           <h1 className="text-3xl font-[spaceBold] sm:text-4xl font-semibold text-[#1f2a44] mb-6">
-            About {loan.name}
+            About Presonal Loan 
           </h1>
 
           <p className="text-base sm:text-xl font-[spaceRegualar] text-gray-700 leading-relaxed max-w-5xl mb-5">
-            {loan.name} is the obvious choice if you need a finance for Personal finance, Medical emergency, Wedding purposes, Abroad travel, Holidays, Child education and for buying consumer durable things.
+            Presonal Loan  is the obvious choice if you need a finance for Personal finance, Medical emergency, Wedding purposes, Abroad travel, Holidays, Child education and for buying consumer durable things.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mb-5 font-[spaceRegualar]">
@@ -80,7 +80,7 @@ const AboutLoan = () => {
             It can broadly be used for consolidating your debt (from other loans or credit cards), making high-value purchases for which you do not have cash in hand, or for emergency situations.
           </p>
           <div onClick={handleScrollToForm} className="cursor-pointer">
-            <Btn value={`Apply for ${loan.name}`} font="spaceBold" />
+            <Btn value={`Apply for Presonal Loan `} font="spaceBold" />
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@ const AboutLoan = () => {
 
           <div className="max-w-6xl mb-16">
             <h2 className="text-3xl sm:text-4xl font-semibold text-[#1f2a44] mb-4">
-              {loan.name} Products
+              Presonal Loan  Products
             </h2>
             <p className="text-gray-600 text-base sm:text-lg max-w-3xl">
               Achieve all your goals and aspirations; with the right kind of help,
@@ -168,7 +168,7 @@ const AboutLoan = () => {
 
           <div className="mb-16">
             <h2 className="text-3xl sm:text-4xl font-semibold text-[#1f2a44] mb-4">
-              Features of {loan.name}
+              Features of Presonal Loan 
             </h2>
             <p className="text-gray-600 max-w-3xl">
               All loans are not created equal, personal loan has become a great
@@ -245,7 +245,7 @@ const AboutLoan = () => {
 
           <div className="mb-14">
             <h2 className="text-3xl sm:text-4xl font-semibold text-[#1f2a44] mb-4">
-              {loan.name} – Eligibility
+              Presonal Loan  – Eligibility
             </h2>
             <p className="text-gray-600 max-w-5xl leading-relaxed">
               The eligibility criteria for personal loans may vary from lender to
@@ -338,7 +338,7 @@ const AboutLoan = () => {
 
           <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
             {
-              `Now apply for a ${loan.name} online, All you need to do is provide
+              `Now apply for a Presonal Loan  online, All you need to do is provide
             your details below application form.`
             }
           </p>
