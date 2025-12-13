@@ -22,18 +22,18 @@ const Contact = () => {
 
                     <div className='flex flex-col gap-6 mt-4 md:flex-row md:gap-40'>
                         <div>
-                            <h1 className='text-2xl font-[semibold] text-center md:text-left'>700+</h1>
+                            <h1 className='text-2xl font-[semibold] text-center md:text-left'>1200+</h1>
                             <h1 className='text-xl font-[regular-inter]'>
                                 Financial advisors</h1>
                         </div>
                         <div>
-                            <h1 className='text-xl font-[semibold] text-center md:text-left'> 125+</h1>
+                            <h1 className='text-xl font-[semibold] text-center md:text-left'>100+</h1>
                             <h1 className='text-2xl font-[regular-inter]'>
 
                                 Lending partners</h1>
                         </div>
                     </div>
-                    <Link to='/form' className='mt-5'>
+                    <Link to='/Contact us' className='mt-5'>
                         <Btn value={"contact us"} font={"spaceRegualar"} />
                     </Link>
                 </div>

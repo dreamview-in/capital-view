@@ -4,37 +4,38 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 
 const Help = () => {
     const data = [
         {
             img: "/find2.png",
-            title: "Professional Loan",
+            name: "Professional Loan",
             bg: "white",
             large: false,
         },
         {
             img: "/find1.png",
-            title: "Loan Against Property",
+            name: "Loan Against Property",
             bg: "white",
             large: false,
         },
         {
             img: "/find3.png",
-            title: "Personal Loan",
+            name: "Personal Loan",
             bg: "white",
             large: false,
         },
         {
             img: "/loan1.jpg",
-            title: "Business Loan",
+            name: "Business Loan",
             bg: "white",
             large: false,
         },
         {
             img: "/loan2.jpg",
-            title: "Home Loan",
+            name: "Home Loan",
             bg: "white",
             large: false,
         },
@@ -69,7 +70,6 @@ const Help = () => {
                 Let us help you <span className="text-[#6BD1D3]">FIND</span> a Loan
             </h1>
 
-            {/* Swiper */}
             <Swiper
                 modules={[Autoplay, Pagination]}
                 autoplay={{ delay: 2500, disableOnInteraction: false }}
@@ -92,9 +92,9 @@ const Help = () => {
                 
 
                 {data.map((item, index) => (
-                    <SwiperSlide key={index} className="flex justify-center">
-                        <div
-                            className={`shadow-xl shadow-gray-400 overflow-hidden
+                    <SwiperSlide key={index} className="flex  justify-center">
+                        <Link to="/loan" state={{ loan: item }}
+                            className={`shadow-xl cursor-pointer shadow-gray-400 overflow-hidden
                 ${item.large
                                     ? "w-[75vw] h-[85vw] md:w-[28vw] md:h-[28vw]"
                                     : "w-[70vw] h-[80vw] md:w-[25vw] md:h-[25vw]"
@@ -102,7 +102,7 @@ const Help = () => {
                         >
                             <img
                                 src={item.img}
-                                alt={item.title}
+                                alt={item.name}
                                 className={`w-full object-cover
                   ${item.large
                                         ? "h-[60vw] md:h-[23vw]"
@@ -115,9 +115,9 @@ const Help = () => {
                            text-2xl font-[spaceRegualar] font-bold"
                                 style={{ backgroundColor: item.bg }}
                             >
-                                {item.title}
+                                {item.name}
                             </div>
-                        </div>
+                        </Link>
                     </SwiperSlide>
                 ))}
             </Swiper>

@@ -8,7 +8,7 @@ const Home = () => {
             <div className='w-full md:w-1/2 h-full flex flex-col gap-7 text-white items-center px-8 justify-center md:items-start'>
                 <h1 className='text-white font-bold font-[bold-inter] text-4xl md:text-[3.6vw] text-center md:text-left uppercase'>Turn Your <span>Dream</span> <span>home</span> Into Reality<span>.</span></h1>
                 <p className='text-center font-[regular-inter] md:text-left md:text-[1.5vw] capitalize'>Affordable EMIs, flexible tenures, and easy approval – your home is just a step away.</p>
-                <Link to='/form' >
+                <Link to='/Contact us' >
                 <Btn value={'apply now'} font={"semibold"}/>
                 </Link>
             </div>

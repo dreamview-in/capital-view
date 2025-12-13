@@ -18,7 +18,7 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Container />} />
-        <Route path='/form' element={<ContactForm />} />
+        {/* <Route path='/form' element={<ContactForm />} /> */}
         <Route path='/loan' element={<AboutLoan />} />
         <Route path='/loanForm' element={<Form />} />
         <Route path='/Loan Products' element={
@@ -27,8 +27,8 @@ const App = () => {
           <Loan/>
           </>
         } />
-        <Route path='/Contact us' element={<Contact />} />
-        <Route path='/About us' element={<About />} />
+        <Route path='/Contact us' element={<ContactForm />} />
+        <Route path='/About us' element={<Contact />} />
       </Routes>
     </div>
   )
