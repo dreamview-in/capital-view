@@ -14,7 +14,7 @@ const Navbar = () => {
       </div>
 
       <div className="hidden md:flex gap-6 items-center">
-        {["Home", " Loan Products", "Contact us", "About us"].map((item, i) => (
+        {["Home", " Loan Products", "Contact us", "About us","Become Referral Partner"].map((item, i) => (
           <Link
           to={item === "Home" ? "/" : `/${item.trim()}`}
             key={i}
@@ -37,7 +37,7 @@ const Navbar = () => {
 
       {open && (
         <div className="absolute top-[12vh] left-0 w-full bg-[#14263E] flex flex-col items-center gap-6 py-6 md:hidden">
-          {["Home", " Loan Products", "Contact us", "About us"].map((item, i) => (
+          {["Home", " Loan Products", "Contact us", "About us","Become Referral Partner"].map((item, i) => (
             <Link
              to={item === "Home" ? "/" : `/${item.trim()}`}
               key={i}

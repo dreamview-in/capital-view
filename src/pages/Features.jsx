@@ -5,32 +5,32 @@ const Features = () => {
         {
             id: 1,
             img: "/img-1.png",
-            number: "100+",
-            title: "CITIES"
+            number: "1200+",
+            title: "Business Associates"
         },
         {
             id: 2,
             img: "/img-2.png",
-            number: "3200+",
-            title: "connecters "
+            number: "50+",
+            title: "Cities "
         },
         {
             id: 3,
             img: "/img-3.png",
-            number: "50+",
-            title: "employees"
+            number: "25+",
+            title: "Employees"
         },
         {
             id: 4,
             img: "/img-4.png",
-            number: "700+",
-            title: "Financial Advisors"
+            number: "100+",
+            title: "Lending Partners"
         },
         {
             id: 5,
             img: "/img-5.png",
-            number: "50+",
-            title: "Lending Partners"
+            number: "2000+",
+            title: "Customers"
         },
 
     ]

@@ -13,6 +13,7 @@ import About from './About'
 import ContactForm from './ContactForm'
 import Footer from './Footer'
 import Navbar from '../components/Navbar'
+import Loan from './Loan'
 
 const Container = () => {
   return (
@@ -22,9 +23,8 @@ const Container = () => {
       <Contact/>
       <Unique/>
       <Help/>
+      <Loan/>
       <Partners />
-      {/* <Nbcs/> */}
-      {/* <Journey/> */}
       <Emi/>
       <Form/>
       <About/>

@@ -24,7 +24,7 @@ const About = () => {
   return (
     <div className='w-full md:h-screen p-8 md:px-30 flex flex-col items-center justify-center'>
       <h1 className='text-[6vw] md:text-[2vw] font-[spaceBold] '>
-        Our Journey in <span>Numbers</span>
+        Customer <span>Testimonials</span>
       </h1>
       <p className='px-5 md:w-[50%] text-center mt-2 text-gray-500 font-[spaceRegualar]'>CaptialVenue helps individuals and businesses access trusted loans and government-backed funding with ease. We simplify the process, offering quick tools and expert support to fuel your financial growth.</p>
 

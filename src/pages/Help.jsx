@@ -1,17 +1,17 @@
 import React from 'react'
 
 const Help = () => {
-     const data = [
-         {
-             img: "/find2.png",
-             title: "Professional Loan",
-             bg: "white"
-            },
-            {
-                img: "/find1.png",
-                title: "Loan Against Property",
-                bg: "#6BD1D3"
-            },
+    const data = [
+        {
+            img: "/find2.png",
+            title: "Professional Loan",
+            bg: "white"
+        },
+        {
+            img: "/find1.png",
+            title: "Loan Against Property",
+            bg: "#6BD1D3"
+        },
         {
             img: "/find3.png",
             title: "Personal Loan",
