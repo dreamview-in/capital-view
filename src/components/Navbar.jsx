@@ -74,7 +74,8 @@ const Navbar = () => {
         <div className="absolute top-[12vh] left-0 w-full bg-[#14263E] flex flex-col items-center gap-6 py-6 md:hidden">
           {["Home", " Loan Products", "Contact us", "About us"].map((item, i) => (
             <Link
-             to={item === "Home" ? "/" : `/${item.trim()}` }
+            onClick={()=> setOpen(false)} 
+             to={item === "Home" ? "/" : `/${item.trim()}`  }
               key={i}
               className="text-white text-lg font-[spaceRegualar] cursor-pointer hover:text-[#6BD1D3] duration-300"
             >
@@ -82,7 +83,7 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <Link to="/Contact us" className="bg-[#75DCE3] text-[1rem] text-black font-[spaceBold] px-10 py-3 rounded-md hover:bg-[#5ac1c7] transition-all uppercase duration-300">
+          <Link to="/Contact us" onClick={()=> setOpen(false)} className="bg-[#75DCE3] text-[1rem] text-black font-[spaceBold] px-10 py-3 rounded-md hover:bg-[#5ac1c7] transition-all uppercase duration-300">
             become referral partner 
           </Link>
         </div>

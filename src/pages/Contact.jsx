@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Contact = () => {
     return (
-        <div className='w-full md:h-screen p-10 flex items-center justify-center bg-white'>
+        <div className='w-full md:h-screen p-10 md:mt-0 mt-[12vh] flex items-center justify-center bg-white'>
             <div className=' p-12 flex flex-col md:flex-row-reverse items-center bg-[#F1FCFE] justify-center gap-6'>
                 <div className='w-full h-full flex items-center justify-center'>
                     <img className='w-[60%] md:w-[80%]' src="/contact.gif" alt="" />

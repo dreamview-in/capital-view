@@ -2,9 +2,7 @@ import React from 'react'
 
 const Emi = () => {
   return (
-    <div className='w-full md:h-[90vh
-    
-    ] p-8 flex flex-col items-center justify-center bg-[#F1FCFE]'>
+    <div className='w-full md:h-[90vh] p-8 flex flex-col items-center justify-center bg-[#F1FCFE]'>
         <h1 className='text-[6vw] md:text-[2vw] font-[spaceBold] '>
                 EMI Calculator 
             </h1>

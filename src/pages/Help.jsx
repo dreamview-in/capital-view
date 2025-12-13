@@ -42,7 +42,7 @@ const Help = () => {
     ];
 
     return (
-        <div className="relative w-full md:h-screen p-6 overflow-hidden flex flex-col items-center justify-center">
+        <div className="relative w-full md:mt-0 mt-[20vh] md:h-screen p-6 overflow-hidden flex flex-col items-center justify-center">
 
             {/* Background SVGs (same as your first component) */}
             <div className="hidden absolute md:block bottom-0 z-[-2]">

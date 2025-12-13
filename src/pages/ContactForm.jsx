@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-    <div className='w-full md:h-screen p-6 flex items-center justify-center'>
+    <div className='w-full md:h-screen p-6 flex md:mt-0 mt-[12vh] items-center justify-center'>
       <div className='w-full bg-[#DAF3F7] gap-5 border-2 md:py-12 md:px-24 border-[#6dd4d6] rounded-xl p-5 flex flex-col md:flex-row items-center justify-center'>
         <div className='w-full flex flex-col gap-2 items-center justify-center md:items-start'>
             <h1 className='text-[8vw] md:text-[4vw] text-center md:text-left font-[spaceBold] capitalize'>We are <span>here</span> to <br /> assist <span>you</span>.</h1>
