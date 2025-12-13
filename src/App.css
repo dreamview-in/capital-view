@@ -26,3 +26,20 @@ span{
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+.swiper-pagination {
+  position: relative;
+  margin-top: 24px;
+  z-index: 50;
+}
+
+.swiper-pagination-bullet {
+  background-color: #bfecec;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #6BD1D3;
+  width: 22px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}

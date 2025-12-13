@@ -242,7 +242,6 @@ const pieData = [
                             <h1 className='font-[spaceBold] text-xl  '>Monthly EMI</h1>
                             <h1 className='font-[spaceBold] text-xl  '>₹ {formatINR(roundedEMI)}</h1>
                         </div>
-                        <Btn value="Apply Now" font="spaceBold"/>
                     </div>
                 </div>
             </div>
