@@ -42,7 +42,7 @@ const Navbar = () => {
          className={`w-[20vw] top-[60%] h-[15vw] rounded-xl flex flex-col justify-center p-2 gap-2 bg-white absolute ${menu ? "block": "hidden"}`}>
             {LoanData.map((item, i) => (
               <Link 
-              to={`/loan`}
+              to={`/${item.name}`}
               state={{loan: item}}
               key={i} className="text-black p-2 font-[spaceRegualar] hover:text-[#6BD1D3] duration-300">
                 {item.name}

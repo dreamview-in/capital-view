@@ -1,57 +1,58 @@
-import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
-import Btn from "../components/Btn";
+import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom';
+import Btn from '../components/Btn';
+import Form from '../components/Form';
 
-const AboutLoan = () => {
-  const faqs = [
-    {
-      question: "What is the minimum credit score required to get a personal loan?",
-      answer:
-        "It depends on the eligibility criteria set by the lender. Most lenders do not specify a minimum credit score for a personal loan. Some lenders might lend to applicants with low credit scores (less than 750) but the interest rate applicable is usually higher in such cases.",
-    },
-    {
-      question: "What is the minimum salary required to get a personal loan?",
-      answer:
-        "The minimum salary requirement varies by lender, but generally starts from ₹15,000 to ₹25,000 per month depending on the city and employer.",
-    },
-    {
-      question: "Can I use a personal loan for marriage purposes?",
-      answer:
-        "Yes, personal loans can be used for marriage expenses such as venue booking, catering, shopping, and travel.",
-    },
-    {
-      question: "How do I cancel my personal loan after the loan is disbursed?",
-      answer:
-        "Once the loan is disbursed, cancellation is usually not possible. However, you can foreclose or prepay the loan by paying applicable charges.",
-    },
-  ];
-
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const toggleFAQ = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-  const location = useLocation();
-  const loan = location.state?.loan;
-
-  if (!loan) {
-    return (
-      <div className="w-full min-h-screen flex items-center justify-center bg-white">
-        <p className="text-lg text-gray-600">
-          No loan selected. Please go back and select a loan.
-        </p>
-      </div>
-    );
-  }
-
-  const handleScrollToForm = () => {
-    document.getElementById("form")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-      useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
-
+const PersonalLoan = () => {
+    const faqs = [
+        {
+          question: "What is the minimum credit score required to get a personal loan?",
+          answer:
+            "It depends on the eligibility criteria set by the lender. Most lenders do not specify a minimum credit score for a personal loan. Some lenders might lend to applicants with low credit scores (less than 750) but the interest rate applicable is usually higher in such cases.",
+        },
+        {
+          question: "What is the minimum salary required to get a personal loan?",
+          answer:
+            "The minimum monthly salary required to avail personal loans varies from lender to lender. However, for large lenders like private and public sector banks, the minimum income eligibility is Rs. 15,000 per month and above.",
+        },
+        {
+          question: "Can I use a personal loan for marriage purposes?",
+          answer:
+            "Yes, you can avail personal loan to meet marriage-related expenditure as personal loans come with flexible end-use. Some lenders even provide personal loans specifically named as wedding/ marriage loans.",
+        },
+        {
+          question: "How do I cancel my personal loan after the loan is disbursed?",
+          answer:
+            "You cannot cancel your personal loan after the loan disbursement. However, you can prepay the loan amount. However, prepaying the personal loan may attract some prepayment or foreclosure charges, depending on the lender’s loan policies. Some lenders may also restrict personal loan prepayment or foreclosure till the repayment of a pre-determined number of EMIs.",
+        },
+      ];
+    
+      const [activeIndex, setActiveIndex] = useState(0);
+    
+      const toggleFAQ = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+      };
+      const location = useLocation();
+      const loan = location.state?.loan;
+    
+      if (!loan) {
+        return (
+          <div className="w-full min-h-screen flex items-center justify-center bg-white">
+            <p className="text-lg text-gray-600">
+              No loan selected. Please go back and select a loan.
+            </p>
+          </div>
+        );
+      }
+    
+      const handleScrollToForm = () => {
+        document.getElementById("form")?.scrollIntoView({ behavior: "smooth" });
+      };
+    
+          useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [location.pathname]);
+    
   return (
     <>
       <div className="w-full md:h-screen flex items-center justify-center flex-col md:mt-0 mt-[12vh]  bg-white px-6 sm:px-12 lg:px-24 py-16">
@@ -300,7 +301,6 @@ const AboutLoan = () => {
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-200">
-            {/* Question */}
             <button
               onClick={() => toggleFAQ(index)}
               className="w-full flex justify-between items-center py-4 text-left 
@@ -313,7 +313,6 @@ const AboutLoan = () => {
               </h1>
             </button>
 
-            {/* Answer */}
             <div
               className={`overflow-hidden transition-all duration-500 ease-in-out
                 ${
@@ -330,69 +329,9 @@ const AboutLoan = () => {
         ))}
       </div>
     </div>
-      <div className="max-w-8xl mx-auto px-6 sm:px-12 lg:px-24">
-        <div id="form" className="w-full bg-white px-6 sm:px-12 lg:px-24 py-20">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-center text-[#1f2a44] mb-4">
-            Get a Quote
-          </h2>
-
-          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
-            {
-              `Now apply for a Presonal Loan  online, All you need to do is provide
-            your details below application form.`
-            }
-          </p>
-
-          <form className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-[#1f2a44] uppercase">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="border border-gray-300 px-4 py-3 rounded-sm focus:outline-none focus:border-[#1f2a44]"
-                />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-[#1f2a44] uppercase">
-                  E-mail
-                </label>
-                <input
-                  type="email"
-                  placeholder="E-mail"
-                  className="border border-gray-300 px-4 py-3 rounded-sm focus:outline-none focus:border-[#1f2a44]"
-                />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-[#1f2a44] uppercase">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  placeholder="Phone"
-                  className="border border-gray-300 px-4 py-3 rounded-sm focus:outline-none focus:border-[#1f2a44]"
-                />
-              </div>
-            </div>
-
-            <div>
-              <button
-                type="submit"
-                className="bg-[#232c4f] text-white px-24 py-4 text-sm font-semibold tracking-wide hover:bg-[#1b2342] transition-all"
-              >
-                SEND INQUIRY
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+      <Form/>
     </>
-  );
-};
+  )
+}
 
-export default AboutLoan;
+export default PersonalLoan

@@ -32,20 +32,6 @@ const Footer = () => {
 
                     </div>
 
-                    <div className='flex flex-col gap-2 w-full items-center md:items-start'>
-                        <h1 className='font-[spaceBold] text-2xl'>Links</h1>
-                        {['Home', 'About us', 'Services', 'EMI Calculator', 'Contact Us', 'FAQs', 'Blog'].map((item, i) => (
-                            <h4 key={i} className='font-[spaceRegualar] cursor-pointer'>{item}</h4>
-                        ))}
-                    </div>
-
-                    <div className='flex flex-col gap-2 w-full items-center md:items-start'>
-                        <h1 className='font-[spaceBold] text-2xl'>Services</h1>
-                        {['Taxation', 'Loan', 'Quick Loans'].map((item, i) => (
-                            <h4 key={i} className='font-[spaceRegualar] cursor-pointer'>{item}</h4>
-                        ))}
-                    </div>
-
                 </div>
 
                 <div className='flex flex-col gap-5 items-center h-full  text-center justify-center md:w-1/3 w-full md:items-start md:text-left md:justify-start relative '>

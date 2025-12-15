@@ -8,6 +8,11 @@ import Help from './pages/Help'
 import Contact from './pages/Contact'
 import ContactForm from './pages/ContactForm'
 import AboutLoan from './pages/AboutLoan'
+import PersonalLoan from './pages/PersonalLoan'
+import HomeLoan from './pages/HomeLoan'
+import PropertyLoan from './pages/PropertyLoan'
+import BusinessLoan from './pages/BusinessLoan'
+import ProfesionalLoan from './pages/ProfesionalLoan'
 
 function App() {
   return (
@@ -15,12 +20,17 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Container />} />
-        <Route path='/loan' element={<AboutLoan />} />
+        <Route path= '/Personal Loan' element={<PersonalLoan/>}/>
+        <Route path= '/Home Loan' element={<HomeLoan/>}/>
+        <Route path= '/Loan Against Property' element={<PropertyLoan/>}/>
+        <Route path= '/Business Loan' element={<BusinessLoan/>}/>
+        <Route path= '/Professional Loan' element={<ProfesionalLoan/>}/>
         <Route path='/Loan Products' element={<>
           <Help />
         </>} />
         <Route path='/Contact us' element={<ContactForm />} />
         <Route path='/About us' element={<Contact />} />
+
       </Routes>
     </div>
   )
