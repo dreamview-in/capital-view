@@ -30,14 +30,14 @@ const About = () => {
     },
     {
       h1: "Loan Against Property (LAP) – Business Expansion",
-      img: "/icon4.jpg",
+      img: "/icon1.jpg",
       title: "Puran Mal",
       sub: "Business Owner",
       desc: "We opted for a loan against property to expand our operations. CapitalVenue helped us leverage our asset effectively with competitive terms and clear communication throughout the process.",
     },
     {
       h1: "Personal Loan – Salaried Individual",
-      img: "/icon5.jpg",
+      img: "/icon2.jpg",
       title: "Priya Malhotra",
       sub: "",
       desc: "CapitalVenue provided quick assistance for my personal loan requirement without unnecessary delays. The team was responsive, and the repayment structure was clearly explained upfront.",

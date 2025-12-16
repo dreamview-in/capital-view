@@ -25,7 +25,7 @@ const ContactForm = () => {
     })
   }
   return (
-    <div className='w-full md:h-screen p-6 flex md:mt-0 mt-[12vh] items-center justify-center'>
+    <div className='w-full md:h-screen p-6 flex md:mt-0 mt-[12vh] items-end justify-center'>
       <div className='w-full bg-[#DAF3F7] gap-5 border-2 md:py-12 md:px-24 border-[#6dd4d6] rounded-xl p-5 flex flex-col md:flex-row items-center justify-center'>
         <div className='w-full flex flex-col gap-2 items-center justify-center md:items-start'>
           <h1 className='text-[6vw] md:text-[2vw] text-center md:text-left font-[spaceBold] capitalize'>Start earning additional income <span>with</span> India’s Leading Loan <span>Distributor</span>.</h1>

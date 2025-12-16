@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className='flex flex-col gap-5 p-3 w-full  items-center md:items-start'>
 
                         <div className='flex justify-center md:justify-start items-center w-full gap-4'>
-                            <h1 className='font-[spaceBold] text-3xl md:text-2xl'>CapitalVenue </h1>
+                            <img className='w-[25%]' src="/logo-text.png" alt="" />
                         </div>
 
                         <p className='font-[spaceRegualar] md:text-left text-center text-gray-500 text-xl'>
