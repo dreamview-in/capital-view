@@ -27,6 +27,10 @@ const Navbar = () => {
       name: "Professional Loan",
     
     },
+    {
+      name: "Loan Against Securities",
+    
+    },
   ]
 
   return (
@@ -40,7 +44,7 @@ const Navbar = () => {
       <div className="hidden md:flex gap-6 items-center realtive" onMouseLeave={() => setMenu(false)}>
         <div
         onMouseEnter={()=> setMenu(true)}
-         className={`w-[20vw] top-[60%] h-[15vw] rounded-xl flex flex-col justify-center p-2 gap-2 bg-white absolute ${menu ? "block": "hidden"}`}>
+         className={`w-[20vw] top-[60%] h-[18vw] shadow-2xl rounded-xl flex flex-col justify-center p-2 gap-2 bg-white absolute ${menu ? "block": "hidden"}`}>
             {LoanData.map((item, i) => (
               <Link 
               to={`/${item.name}`}

@@ -95,7 +95,7 @@ const Form = () => {
                     <div>
                         <button
                             type="submit"
-                            className="bg-[#232c4f] text-white px-24 py-4 text-sm font-semibold tracking-wide hover:bg-[#1b2342] transition-all"
+                            className="bg-[#232c4f] cursor-pointer text-white px-24 py-4 text-sm font-semibold tracking-wide hover:bg-[#1b2342] transition-all"
                         >
                             SEND INQUIRY
                         </button>

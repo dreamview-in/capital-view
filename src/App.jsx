@@ -12,6 +12,7 @@ import HomeLoan from './pages/HomeLoan'
 import PropertyLoan from './pages/PropertyLoan'
 import BusinessLoan from './pages/BusinessLoan'
 import ProfesionalLoan from './pages/ProfesionalLoan'
+import Las from './pages/Las'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path= '/Loan Against Property' element={<PropertyLoan/>}/>
         <Route path= '/Business Loan' element={<BusinessLoan/>}/>
         <Route path= '/Professional Loan' element={<ProfesionalLoan/>}/>
+        <Route path= '/Loan Against Securities' element={<Las/>}/>
         <Route path='/Loan Products' element={<>
           <Help />
         </>} />

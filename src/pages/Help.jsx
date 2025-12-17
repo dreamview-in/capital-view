@@ -39,6 +39,12 @@ const Help = () => {
             bg: "white",
             large: false,
         },
+        {
+            img: "/loan3.jpeg",
+            name: "Loan Against Securities",
+            bg: "white",
+            large: false,
+        },
     ];
 
     return (
@@ -93,7 +99,7 @@ const Help = () => {
 
                 {data.map((item, index) => (
                     <SwiperSlide key={index} className="flex  justify-center">
-                        <Link to="/loan" state={{ loan: item }}
+                        <Link to={`/${item.name}`} state={{ loan: item }}
                             className={`shadow-xl cursor-pointer shadow-gray-400 overflow-hidden
                 ${item.large
                                     ? "w-[75vw] h-[85vw] md:w-[28vw] md:h-[28vw]"
