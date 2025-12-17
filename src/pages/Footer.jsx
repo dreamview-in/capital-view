@@ -45,7 +45,7 @@ const Footer = () => {
                     <p className='font-[spaceRegualar] text-center md:text-left text-gray-500 text-xl'>
                         Transparent. Trusted. Impactful. Let’s build a better future.
                     </p>
-                    <Link to='/form'>
+                    <Link to='/Contact us'>
                     <Btn value={"Get Started"} font={"spaceBold"} />
                     </Link>
 
