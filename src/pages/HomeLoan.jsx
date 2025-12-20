@@ -81,7 +81,7 @@ const HomeLoan = () => {
            Home loans are the first in India to offer end to end online processing. You can apply home loan online anytime, anywhere and get quick approval.
           </p>
           <div onClick={handleScrollToForm} className="cursor-pointer">
-            <Btn value={`Apply for Presonal Loan `} font="spaceBold" />
+            <Btn value={`Apply for Home Loan `} font="spaceBold" />
           </div>
         </div>
       </div>

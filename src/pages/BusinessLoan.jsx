@@ -80,7 +80,7 @@ const BusinessLoan = () => {
                         Small and medium enterprises can now grow their operations and scale in an easy way with SME and MSME loans..
                     </p>
                     <div onClick={handleScrollToForm} className="cursor-pointer">
-                        <Btn value={`Apply for Presonal Loan `} font="spaceBold" />
+                        <Btn value={`Apply for Business Loan `} font="spaceBold" />
                     </div>
                 </div>
             </div>

@@ -59,7 +59,7 @@ const Las = () => {
            A Loan Against Securities (LAS) is a smart financing solution that allows you to raise funds by pledging your existing financial investments as collateral—without having to sell them. This enables you to meet your short-term or medium-term liquidity needs while continuing to benefit from the potential growth of your investments.
           </p>
           <div onClick={handleScrollToForm} className="cursor-pointer">
-            <Btn value={`Apply for Presonal Loan `} font="spaceBold" />
+            <Btn value={`Apply for Loan Against Securities `} font="spaceBold" />
           </div>
         </div>
       </div>

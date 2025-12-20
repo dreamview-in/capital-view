@@ -76,7 +76,7 @@ const ProfesionalLoan = () => {
                        Salaried and self-employed engineers can now easily meet their personal and professional needs with an exclusive loan for engineers.
                     </p>
                     <div onClick={handleScrollToForm} className="cursor-pointer">
-                        <Btn value={`Apply for Presonal Loan `} font="spaceBold" />
+                        <Btn value={`Apply for Professional Loan `} font="spaceBold" />
                     </div>
                 </div>
             </div>

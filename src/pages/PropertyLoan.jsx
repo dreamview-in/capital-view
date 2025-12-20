@@ -81,7 +81,7 @@ const PropertyLoan = () => {
         If the amount is used for funding a house, the interest paid on the loan provides tax benefits under Section 24 of the Income Tax Act, 1961, up to an amount of Rs. 2 lakh.
           </p>
           <div onClick={handleScrollToForm} className="cursor-pointer">
-            <Btn value={`Apply for Presonal Loan `} font="spaceBold" />
+            <Btn value={`Apply for Loan Against Property `} font="spaceBold" />
           </div>
         </div>
       </div>
