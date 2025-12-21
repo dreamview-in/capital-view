@@ -17,13 +17,17 @@ const Form = () => {
 
     const [loanAmount, setLoanAmount] = useState({
         min: 100000,
-        max: 10000000,
+        max: 500000000,
         step: 10000,
         value: 1000000
     });
+    const rateMin = 6.0;
+    const rateMax = 16.0;
     const loanPercent = ((loanAmount.value - loanAmount.min) / (loanAmount.max - loanAmount.min)) * 100;
-    const rateOfInterest = Loandata[loanType].rate;
-    const rateOfInterestPercent = ((rateOfInterest - 5) / (20 - 5)) * 100;
+    const [rateOfInterest, setRateOfInterest] = useState(
+        Loandata[loanType].rate
+    );
+    const rateOfInterestPercent = ((rateOfInterest - rateMin) / (rateMax - rateMin)) * 100;
     const [tenureMonths, setTenureMonths] = useState(40);
     const tenureMonthsPercent = ((tenureMonths - 12) / (60 - 12)) * 100;
 
@@ -42,10 +46,10 @@ const Form = () => {
     const totalInterest = totalPayable - P;
     const formatINR = (value) =>
         value.toLocaleString("en-IN");
-const pieData = [
-    { name: "Principal", value: P },
-    { name: "Interest", value: totalInterest },
-];
+    const pieData = [
+        { name: "Principal", value: P },
+        { name: "Interest", value: totalInterest },
+    ];
 
 
     return (
@@ -104,34 +108,44 @@ const pieData = [
                                     ₹1L
                                 </h1>
                                 <h1 className='text-[2.5vw] md:text-[1vw] text-gray-500 font-[spaceRegualar] '>
-                                    ₹1Cr
+                                    ₹50Cr
                                 </h1>
                             </div>
                         </div>
                     </div>
                     <div className='w-full flex flex-col gap-5'>
                         <div className='w-full flex items-center justify-between'>
-                            <h1 className='text-[3vw] md:text-[1vw] text-gray-500 font-[spaceRegualar]'>Rate Of Interest (P.A.)</h1>
+                            <h1 className='text-[3vw] md:text-[1vw] text-gray-500 font-[spaceRegualar]'>
+                                Rate Of Interest (P.A.)
+                            </h1>
                             <div className='bg-[#FFFAED] md:min-w-[10vw] min-w-[28vw] flex items-center justify-center px-10 py-3 rounded border border-zinc-400'>
-                                {rateOfInterest}%
+                                {rateOfInterest.toFixed(2)}%
                             </div>
                         </div>
-                        <div className='w-full flex flex-col gap-3'>
+
+                        <div className='relative w-full flex flex-col gap-3'>
+                            <input
+                                type="range"
+                                min={rateMin}
+                                max={rateMax}
+                                step={0.05}
+                                value={rateOfInterest}
+                                onChange={(e) => setRateOfInterest(Number(e.target.value))}
+                                className="absolute top-0 opacity-0 left-0 w-full h-3 cursor-pointer z-10"
+                            />
+
                             <div className='w-full h-0.5 bg-zinc-400'>
-                                <div className='h-full w-[60%] relative bg-[#6BD1D3]' width={`${rateOfInterestPercent}%`}>
+                                <div className='h-full w-[20%] relative bg-[#6BD1D3]' style={{ width: `${rateOfInterestPercent}%` }}>
                                     <div className='h-3 w-3 rounded-full  absolute -top-1 right-0 bg-[#6BD1D3]'></div>
                                 </div>
                             </div>
                             <div className='w-full flex items-center justify-between'>
-                                <h1 className='text-[2.5vw] md:text-[1vw] text-gray-500 font-[spaceRegualar] '>
-                                    5%
-                                </h1>
-                                <h1 className='text-[2.5vw] md:text-[1vw] text-gray-500 font-[spaceRegualar] '>
-                                    20%
-                                </h1>
+                                <h1 className='text-[2.5vw] md:text-[1vw] text-gray-500'>6%</h1>
+                                <h1 className='text-[2.5vw] md:text-[1vw] text-gray-500'>16%</h1>
                             </div>
                         </div>
                     </div>
+
                     <div className='w-full flex flex-col gap-5'>
                         <div className='w-full flex items-center justify-between'>
                             <h1 className='text-[3vw] md:text-[1vw] text-gray-500 font-[spaceRegualar]'>Tenure Months</h1>
