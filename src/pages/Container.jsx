@@ -14,6 +14,7 @@ import ContactForm from './ContactForm'
 import Footer from './Footer'
 import Navbar from '../components/Navbar'
 import Loan from './Loan'
+import Cont from './Cont'
 
 const Container = () => {
   return (
@@ -27,7 +28,7 @@ const Container = () => {
       <Emi/>
       <Form/>
       <About/>
-      <ContactForm/>
+      <Cont/>
       <Footer/>
     </div>
   )
