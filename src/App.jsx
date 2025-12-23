@@ -15,6 +15,7 @@ import ProfesionalLoan from './pages/ProfesionalLoan'
 import Las from './pages/Las'
 import CapitalLoan from './pages/CapitalLoan'
 import MSME from './pages/MSME'
+import Cont from './pages/Cont'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Help />
         </>} />
         <Route path='/Contact us' element={<ContactForm />} />
+        <Route path='/Cont' element={<Cont />} />
         <Route path='/About us' element={<Contact />} />
         <Route path='/apply' element={<Help />} />
 

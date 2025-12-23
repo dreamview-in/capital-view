@@ -13,7 +13,10 @@ const Footer = () => {
                     <div className='flex flex-col gap-5 p-3 w-full  items-center md:items-start'>
 
                         <div className='flex justify-center md:justify-start items-center w-full gap-4'>
-                            <img className='w-[25%]' src="/logo-text.png" alt="" />
+                            <div className="font-[spaceBold] text-[#6BD1D3] flex gap-1 items-center text-2xl md:text-4xl">
+                                <img className="w-8 h-8 md:w-10 md:h-10 object-contain" src="/logo.png" alt="" />
+                                CAPITALVENUE
+                            </div>
                         </div>
 
                         <p className='font-[spaceRegualar] md:text-left text-center text-gray-500 text-xl'>
@@ -46,7 +49,7 @@ const Footer = () => {
                         Transparent. Trusted. Impactful. Let’s build a better future.
                     </p>
                     <Link to='/Contact us'>
-                    <Btn value={"Get Started"} font={"spaceBold"} />
+                        <Btn value={"Get Started"} font={"spaceBold"} />
                     </Link>
 
                     <div className='flex gap-3 items-center'>

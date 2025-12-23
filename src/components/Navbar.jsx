@@ -45,7 +45,7 @@ const Navbar = () => {
     <div className="w-full flex top-0 items-center justify-between px-6 h-[12vh] bg-[#14263E] fixed z-99">
 
       <div className="font-[spaceBold] text-[#6BD1D3] flex gap-1 items-center text-2xl md:text-4xl">
-        <img className="w-[10%]" src="/logo.png" alt="" />
+        <img    className="w-8 h-8 md:w-10 md:h-10 object-contain" src="/logo.png" alt="" />
         CAPITALVENUE
       </div>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
         {["Home", "Loan Products", "Contact us", "About us",].map((item, i) => (
           <Link
-          to={item === "Home" || item === "Loan Products" ? "/" : `/${item.trim()}`}
+          to={item === "Home" || item === "Loan Products" ? "/" : item === "Contact us" ? "/cont" : `/${item.trim()}`}
             key={i}
             className="text-white font-[spaceRegualar] relative cursor-pointer hover:text-[#6BD1D3] duration-300"
             onMouseEnter={() => item === "Loan Products" && setMenu(true)}
@@ -88,7 +88,7 @@ const Navbar = () => {
           {["Home", " Loan Products", "Contact us", "About us"].map((item, i) => (
             <Link
             onClick={()=> setOpen(false)} 
-             to={item === "Home" ? "/" : `/${item.trim()}`  }
+             to={item === "Home" ? "/" : item === "Contact us" ? "/cont" : `/${item.trim()}`}
               key={i}
               className="text-white text-lg font-[spaceRegualar] cursor-pointer hover:text-[#6BD1D3] duration-300"
             >
@@ -96,7 +96,7 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <Link to="/Contact us" onClick={()=> setOpen(false)} className="bg-[#75DCE3] text-[1rem] text-black font-[spaceBold] px-10 py-3 rounded-md hover:bg-[#5ac1c7] transition-all uppercase duration-300">
+          <Link to="/cont" onClick={()=> setOpen(false)} className="bg-[#75DCE3] text-[1rem] text-black font-[spaceBold] px-10 py-3 rounded-md hover:bg-[#5ac1c7] transition-all uppercase duration-300">
             become referral partner 
           </Link>
         </div>

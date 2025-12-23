@@ -19,7 +19,7 @@ const Contact = () => {
                     </div>
 
                     <p className='text-center md:text-left md:text-2xl text-gray-500 font-[spaceRegualar]'>Empowering businesses with seamless <br /> funding solutions and strategic growth support.</p>
-                    <Link to='/Contact us' className='mt-5'>
+                    <Link to='/Cont' className='mt-5'>
                         <Btn value={"contact us"} font={"spaceRegualar"} />
                     </Link>
                 </div>

@@ -56,24 +56,6 @@ const Form = () => {
         <div className='w-full md:h-screen bg-[#F1FCFE] flex items-center justify-center p-12 '>
             <div className='w-full p-6 bg-white flex flex-col md:flex-row md:px-40 md:py-10 items-center gap-10 rounded-xl shadow-2xl'>
                 <div className=' flex flex-col md:w-[70%] items-start justify-center gap-10'>
-                    <div className='w-full'>
-                        <h1 className='text-[3vw]  md:text-[1vw] text-gray-500 font-[spaceRegualar] '>
-                            Select Your Loan Type
-                        </h1>
-                        <input type="text" />
-                        <select
-                            value={loanType}
-                            onChange={(e) => setLoanType(e.target.value)}
-                            className='w-full p-2 outline-none border capitalize border-gray-300 rounded'
-                        >
-                            {Object.entries(Loandata).map(([key, loan]) => (
-                                <option key={key} value={key}>
-                                    {loan.label}
-                                </option>
-                            ))}
-                        </select>
-
-                    </div>
                     <div className='w-full flex flex-col gap-5'>
                         <div className='w-full flex items-center justify-between'>
                             <h1 className='text-[3vw] md:text-[1vw] text-gray-500 font-[spaceRegualar]'>Loan Amount</h1>
