@@ -44,9 +44,9 @@ const Navbar = () => {
   return (
     <div className="w-full flex top-0 items-center justify-between px-6 h-[12vh] bg-[#14263E] fixed z-99">
 
-      <div className="font-[spaceBold] text-[#6BD1D3] flex gap-1 items-center text-2xl md:text-4xl">
+      <div className="font-[spaceBold] text-white flex gap-2 items-center text-2xl md:text-4xl">
         <img    className="w-8 h-8 md:w-10 md:h-10 object-contain" src="/logo.png" alt="" />
-        CAPITALVENUE
+        <span>Capital</span>Venue
       </div>
 
       <div className="hidden md:flex gap-6 items-center realtive" onMouseLeave={() => setMenu(false)}>
