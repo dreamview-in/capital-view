@@ -1,16 +1,72 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Captial View — React + Vite marketing site
 
-Currently, two official plugins are available:
+Small React + Vite project for a loan/finance marketing site. The app is a multi-page React site (Vite) containing several loan product pages, shared components, and styles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Highlights**
+- Modern React app scaffolded with Vite
+- Component-based layout (`src/components`) and page views (`src/pages`)
+- Responsive styling via `index.css` / `App.css`
 
-## React Compiler
+**Project Structure (top-level)**
+- `index.html` — Vite entry
+- `src/` — application source
+	- `main.jsx` — React entry
+	- `App.jsx` — root app
+	- `components/` — shared UI components (e.g., `Navbar.jsx`, `Btn.jsx`, `Form.jsx`)
+	- `pages/` — page views (Home, About, Contact, various Loan pages)
+- `public/` — static assets
+- `package.json`, `vite.config.js`, `eslint.config.js`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Notable pages in `src/pages`**
+- `Home.jsx`, `About.jsx`, `Contact.jsx`
+- Loan pages: `HomeLoan.jsx`, `PersonalLoan.jsx`, `BusinessLoan.jsx`, `CapitalLoan.jsx`, `PropertyLoan.jsx`, `MSME.jsx`, `ProfesionalLoan.jsx` (and others)
 
-## Expanding the ESLint configuration
+Getting started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Prerequisites:
+- Node.js (recommended 16+ or newer)
+- npm or yarn
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn
+```
+
+Run development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Build for production:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+Preview production build locally:
+
+```bash
+npm run preview
+# or
+yarn preview
+```
+
+Contributing
+
+- Open an issue or submit a PR with improvements. Keep changes focused and follow the existing code style.
+
+License
+
+This repository does not include a license file. Add a `LICENSE` if you intend to open-source the project.
+
+---
+Generated README: describes structure and how to run the app locally.
