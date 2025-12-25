@@ -1,6 +1,7 @@
 import React from 'react'
 import Btn from '../components/Btn'
 import { Link } from 'react-router-dom'
+import { Link2Off } from 'lucide'
 
 const Footer = () => {
     return (
@@ -15,7 +16,7 @@ const Footer = () => {
                         <div className='flex justify-center md:justify-start items-center w-full gap-4'>
                             <div className="font-[spaceBold] text-[#6BD1D3] flex gap-1 items-center text-2xl md:text-4xl">
                                 <img className="w-8 h-8 md:w-10 md:h-10 object-contain" src="/logo.png" alt="" />
-                                CAPITALVENUE
+                                CapitalVenue
                             </div>
                         </div>
 
@@ -54,20 +55,20 @@ const Footer = () => {
 
                     <div className='flex gap-3 items-center'>
                         <h1 className='font-[spaceRegualar]'>Follow us on</h1>
-
-                        <h4 className='text-2xl'><i className="ri-instagram-fill"></i></h4>
-                        <h4 className='text-2xl'><i className="ri-twitter-x-fill"></i></h4>
-                        <h4 className='text-2xl'><i className="ri-facebook-circle-fill"></i></h4>
-                        <h4 className='text-2xl'><i className="ri-youtube-fill"></i></h4>
+                        <Link to="https://www.instagram.com/capital_venue/" className='text-2xl cursor-pointer'><i className="ri-instagram-fill"></i></Link>
+                        <Link to="https://x.com/capital_venue" className='text-2xl cursor-pointer'><i className="ri-twitter-x-fill"></i></Link>
+                        <Link to='https://www.facebook.com/share/1AdFnryQ7Y/' className='text-2xl cursor-pointer'><i className="ri-facebook-circle-fill"></i></Link>
                     </div>
                 </div>
 
             </div>
 
             <div className='w-full p-8 md:justify-between md:flex-row flex flex-col gap-5 items-center justify-center text-white bg-[#14263E]'>
-                <h1 className='cursor-pointer font-[spaceRegualar]'>Privacy & Policy</h1>
-                <h1 className='cursor-pointer font-[spaceRegualar]'>Terms & Conditions</h1>
-                <h1 className='cursor-pointer font-[spaceRegualar]'>Copyright @2024</h1>
+                <Link to='/privacy' className='cursor-pointer font-[spaceRegualar]'>Privacy & Policy</Link>
+                <Link to='/terms' className='cursor-pointer font-[spaceRegualar]'>Terms & Conditions</Link>
+                <h1 className='
+                
+                font-[spaceRegualar]'>All Copyright Reserved @2025</h1>
             </div>
 
         </div>

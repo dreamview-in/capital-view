@@ -1,6 +1,7 @@
 import React from 'react'
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Cont = () => {
@@ -51,19 +52,9 @@ const Cont = () => {
           </div>
 
           <div className='flex mt-8 gap-5 items-center justify-center'>
-            <h4 className='text-2xl'>
-              <i className="ri-facebook-fill"></i>
-            </h4>
-            <h4 className='text-2xl'>
-              <i className="ri-instagram-line"></i>
-            </h4>
-            <h4 className='text-2xl'>
-              <i className="ri-linkedin-fill"></i>
-            </h4>
-            <h4 className='text-2xl'>
-              <i className="ri-youtube-line"></i>
-
-            </h4>
+            <Link to="https://www.instagram.com/capital_venue/" className='text-2xl cursor-pointer'><i className="ri-instagram-fill"></i></Link>
+                        <Link to="https://x.com/capital_venue" className='text-2xl cursor-pointer'><i className="ri-twitter-x-fill"></i></Link>
+                        <Link to='https://www.facebook.com/share/1AdFnryQ7Y/' className='text-2xl cursor-pointer'><i className="ri-facebook-circle-fill"></i></Link>
           </div>
         </div>
         <div className='w-full flex p-2 flex-col items-center justify-center'>

@@ -16,6 +16,9 @@ import Las from './pages/Las'
 import CapitalLoan from './pages/CapitalLoan'
 import MSME from './pages/MSME'
 import Cont from './pages/Cont'
+import Terms from './pages/Terms'
+import Privacy from './pages/Privacy'
+import Footer from './pages/Footer'
 
 function App() {
   return (
@@ -38,8 +41,11 @@ function App() {
         <Route path='/Cont' element={<Cont />} />
         <Route path='/About us' element={<Contact />} />
         <Route path='/apply' element={<Help />} />
+        <Route path='/terms' element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
 
       </Routes>
+      <Footer/>
     </div>
   )
 }

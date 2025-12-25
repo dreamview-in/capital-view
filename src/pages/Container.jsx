@@ -24,7 +24,6 @@ const Container = () => {
       <Form/>
       <About/>
       <Cont/>
-      <Footer/>
     </div>
   )
 }
