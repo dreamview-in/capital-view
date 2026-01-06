@@ -21,7 +21,7 @@ const Footer = () => {
                         </div>
 
                         <p className='font-[spaceRegualar] md:text-left text-center text-gray-500 text-xl'>
-                            Majlis park, Gali No- 7, Near ram mandir, Delhi, North West 110033
+                            C-161 EF, Ground Floor, Majlis park, Near ram mandir, Gali No- 7, Delhi, DELHI, North West 110033
                         </p>
 
                         <h1 className='font-[spaceRegualar] text-2xl mt-8'>Verified Lending Partners</h1>
