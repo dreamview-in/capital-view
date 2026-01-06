@@ -36,7 +36,7 @@ const Cont = () => {
             <h4 className='text-2xl'>
               <i className="ri-phone-line"></i>
             </h4>
-            <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>9897096111, 9911500639</p>
+            <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>8126259912</p>
           </div>
           <div className='flex p-2 gap-3 items-center '>
             <h4 className='text-2xl'>
@@ -48,7 +48,7 @@ const Cont = () => {
             <h4 className='text-2xl'>
               <i className="ri-map-pin-line"></i>
             </h4>
-            <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>    Majlis park, Gali No- 7, Near ram mandir, Delhi, North West 110033</p>
+            <p className='text-[3vw] md:text-xl font-[spaceRegualar]'>    C-161 EF, Ground Floor, Majlis park, Near ram mandir, Gali No- 7, Delhi, DELHI, North West 110033</p>
           </div>
 
           <div className='flex mt-8 gap-5 items-center justify-center'>
